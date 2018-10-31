@@ -1,0 +1,18 @@
+{
+  "systemParams": "win32-x64-64",
+  "modulesFolders": [
+    "libs"
+  ],
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatterns": [
+    "bootstrap@3",
+    "jquery@1.12.4"
+  ],
+  "lockfileEntries": {
+    "bootstrap@3": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71",
+    "jquery@1.12.4": "https://registry.yarnpkg.com/jquery/-/jquery-1.12.4.tgz#01e1dfba290fe73deba77ceeacb0f9ba2fec9e0c"
+  },
+  "files": [],
+  "artifacts": {}
+}
