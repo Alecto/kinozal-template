@@ -1,0 +1,187 @@
+@mixin text-shortener {
+  display: block;
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin bg-color($a: 0, $rgb: 0) {
+  background: rgba($rgb, $rgb, $rgb, $a);
+}
+
+@mixin block-header {
+  margin: 0;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #333333;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
+@mixin icon($base-size: 40px, $fz: 2rem) {
+  position: relative;
+
+  display: block;
+
+  width: $base-size * 2;
+  height: $base-size;
+  margin: ($base-size * 0.75) auto ($base-size * 1.5);
+
+  text-align: center;
+
+  color: #ffffff;
+  background: $color-accent;
+
+  font-size: $fz;
+  line-height: $base-size;
+
+  &::before {
+    position: absolute;
+    top: -$base-size * 0.625;
+    left: 0;
+
+    content: "";
+
+    border-right: $base-size solid transparent;
+    border-bottom: ($base-size * 0.625) solid $color-accent;
+    border-left: $base-size solid transparent;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -($base-size * 0.625);
+    left: 0;
+
+    content: "";
+
+    border-top: ($base-size * 0.625) solid $color-accent;
+    border-right: $base-size solid transparent;
+    border-left: $base-size solid transparent;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $lg - 1) {
+    @content
+  }
+}
+
+@mixin md {
+  @media (max-width: $md - 1) {
+    @content
+  }
+}
+
+@mixin sm {
+  @media (max-width: $sm - 1) {
+    @content
+  }
+}
+
+@mixin xs {
+  @media (max-width: $xs - 1) {
+    @content
+  }
+}
+
+@mixin lg-min {
+  @media (min-width: $lg) {
+    @content
+  }
+}
+
+@mixin md-min {
+  @media (min-width: $md) {
+    @content
+  }
+}
+
+@mixin sm-min {
+  @media (min-width: $sm) {
+    @content
+  }
+}
+
+@mixin xs-min {
+  @media (min-width: $xs) {
+    @content
+  }
+}
+
+@mixin lg-md {
+  @media (max-width: $lg - 1) and (min-width: $md) {
+    @content
+  }
+}
+
+@mixin md-sm {
+  @media (max-width: $md - 1) and (min-width: $sm) {
+    @content
+  }
+}
+
+
+@mixin sm-xs {
+  @media (max-width: $sm - 1) and (min-width: $xs) {
+    @content
+  }
+}
+
+@mixin text-shortener {
+  display: block;
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin block-shortener($fz: 1rem, $lh: 1.5, $h: 70px, $l: 3) {
+  display: -webkit-box;
+  overflow: hidden;
+
+  height: $h;
+
+  font-size: $fz;
+  line-height: $fz * $lh;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $l;
+}
+
+@mixin bg-color($a: 0, $rgb: 0) {
+  background: rgba($rgb, $rgb, $rgb, $a);
+}
+
+@mixin block-header {
+  margin: 0;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid $color-dark;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
