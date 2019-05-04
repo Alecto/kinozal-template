@@ -31,48 +31,6 @@
   border: 0;
 }
 
-@mixin icon($base-size: 40px, $fz: 2rem) {
-  position: relative;
-
-  display: block;
-
-  width: $base-size * 2;
-  height: $base-size;
-  margin: ($base-size * 0.75) auto ($base-size * 1.5);
-
-  text-align: center;
-
-  color: #ffffff;
-  background: $color-accent;
-
-  font-size: $fz;
-  line-height: $base-size;
-
-  &::before {
-    position: absolute;
-    top: -$base-size * 0.625;
-    left: 0;
-
-    content: "";
-
-    border-right: $base-size solid transparent;
-    border-bottom: ($base-size * 0.625) solid $color-accent;
-    border-left: $base-size solid transparent;
-  }
-
-  &::after {
-    position: absolute;
-    bottom: -($base-size * 0.625);
-    left: 0;
-
-    content: "";
-
-    border-top: ($base-size * 0.625) solid $color-accent;
-    border-right: $base-size solid transparent;
-    border-left: $base-size solid transparent;
-  }
-}
-
 @mixin lg {
   @media (max-width: $lg - 1) {
     @content
