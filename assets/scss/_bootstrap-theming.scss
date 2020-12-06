@@ -14,21 +14,19 @@
       }
     }
 
-    > li {
-      > a {
-        transition: background-color 0.5s;
+    > li > a {
+      transition: background-color 0.5s;
 
-        @include sm-min {
-          border-radius: 4px;
-        }
-        @include sm {
-          text-align: center;
-        }
+      @include sm-min {
+        border-radius: 4px;
+      }
+      @include sm {
+        text-align: center;
+      }
 
-        &:hover,
-        &:focus {
-          background-color: $color-primary;
-        }
+      &:hover,
+      &:focus {
+        background-color: $color-primary;
       }
     }
   }
