@@ -40,6 +40,9 @@
   }
 }
 
+$image-size: 75px;
+$image-size-with-padding: $image-size + 10;
+
 .site-news {
   &-item {
     position: relative;
@@ -78,8 +81,8 @@
     &__image {
       float: left;
 
-      width: 75px;
-      margin: 0 10px 10px 0;
+      width: $image-size;
+      margin: 0 ($gap / 3 * 2) ($gap / 3 * 2) 0;
     }
 
     &__date {
@@ -91,7 +94,7 @@
     }
 
     &__title {
-      margin-bottom: 10px;
+      margin-bottom: $gap / 3 * 2;
 
       a {
         transition: color 0.25s;
