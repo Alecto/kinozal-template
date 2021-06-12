@@ -21,7 +21,7 @@
 
     @extend %text-shadow;
     @include xs-min {
-      margin-right: -0.2777em;
+      margin-right: -1rem;
 
       letter-spacing: 0.33em;
 

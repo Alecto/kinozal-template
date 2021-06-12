@@ -65,10 +65,16 @@
 }
 
 .panel {
-  margin-bottom: $gap * 2;
-
   border: none;
-  background-color: darken($color-light, 8%);
+  background-color: darken($color-light, 7%);
+
+&:not(:last-of-type) {
+    margin-bottom: $gap * 2;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   &-info {
     .panel-heading {
