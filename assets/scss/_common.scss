@@ -22,12 +22,12 @@ h1 {
   font-family: $font-header;
 
   @include xs-min {
-    margin: (-$gap / 2) 0 ($gap * 3);
+    margin: -($gap / 3 * 2) 0 1em 0;
 
     font-size: 3rem;
   }
   @include xs {
-    margin: 0 0 ($gap * 2);
+    margin: 0 0 1em;
 
     font-size: 2rem;
   }
