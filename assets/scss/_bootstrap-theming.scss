@@ -44,7 +44,7 @@
 
 .navbar-left {
   @include sm-min {
-    li {
+    > li {
       margin: 5px 5px 5px 0;
     }
   }
@@ -55,7 +55,7 @@
 
 .navbar-right {
   @include sm-min {
-    li {
+    > li {
       margin: 5px 0 5px 5px;
     }
   }
@@ -68,7 +68,7 @@
   border: none;
   background-color: darken($color-light, 7%);
 
-&:not(:last-of-type) {
+  &:not(:last-of-type) {
     margin-bottom: $gap * 2;
   }
 
@@ -78,13 +78,13 @@
 
   &-info {
     .panel-heading {
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
 
       color: $color-light;
       border: none;
       background-color: $color-accent;
 
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
   }
 
@@ -93,6 +93,7 @@
     border-radius: 0 0 4px 4px;
   }
 }
+
 .btn-lg,
 .input {
   &-lg,

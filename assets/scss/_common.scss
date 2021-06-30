@@ -5,6 +5,8 @@ html {
 body {
   font-family: $font-main;
   font-size: $font-size;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
