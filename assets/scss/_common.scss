@@ -3,10 +3,12 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+
+  max-width: 100%;
+
   font-family: $font-main;
   font-size: $font-size;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 a {
@@ -24,7 +26,7 @@ h1 {
   font-family: $font-header;
 
   @include xs-min {
-    margin: -($gap / 3 * 2) 0 1em 0;
+    margin: -($gap-md) 0 1em 0;
 
     font-size: 3rem;
   }
@@ -42,7 +44,7 @@ h1 {
 
     content: "";
 
-    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+    border-bottom: 3px solid $color-accent-light;
   }
 }
 
@@ -69,7 +71,7 @@ h2 {
 
     content: "";
 
-    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+    border-bottom: 3px solid $color-accent-light;
   }
 
   &::after {
@@ -80,7 +82,7 @@ h2 {
 
     content: "";
 
-    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+    border-bottom: 3px solid $color-accent-light;
   }
 }
 

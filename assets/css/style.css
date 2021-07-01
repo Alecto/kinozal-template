@@ -44,7 +44,9 @@
 
 .panel {
   border: none;
-  background-color: #ededed;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .panel:not(:last-of-type) {
   margin-bottom: 30px;
@@ -53,16 +55,16 @@
   margin-bottom: 0;
 }
 .panel-info .panel-heading {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 
   color: #ffffff;
   border: none;
   background-color: #df8a13;
 
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .panel-body {
-  border: 1px solid #dddddd;
+  border: 1px solid #d5d5d5;
   border-radius: 0 0 4px 4px;
 }
 
@@ -74,12 +76,12 @@
 }
 
 .well {
-  border-color: #dddddd;
-  background-color: #f1f1f1;
+  border-color: #d5d5d5;
+  background-color: #f4f4f4;
 }
 
 .embed-responsive {
-  border: 1px solid #dddddd;
+  border: 1px solid #d5d5d5;
   border-bottom: none;
   border-radius: 4px 4px 0 0;
 }
@@ -95,6 +97,10 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+
+  max-width: 100%;
+
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
 }
@@ -120,7 +126,7 @@ h1::after {
 
   content: "";
 
-  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  border-bottom: 3px solid #f0ad4f;
 }
 
 h2 {
@@ -135,7 +141,7 @@ h2::before {
 
   content: "";
 
-  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  border-bottom: 3px solid #f0ad4f;
 }
 h2::after {
   position: absolute;
@@ -145,7 +151,7 @@ h2::after {
 
   content: "";
 
-  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  border-bottom: 3px solid #f0ad4f;
 }
 
 section {
@@ -166,6 +172,10 @@ section {
 }
 .header-logo__title {
   display: block;
+
+  margin-right: -0.33em;
+
+  letter-spacing: 0.33em;
 
   color: #df8a13;
 
@@ -264,7 +274,8 @@ section {
   transition: background-color 0.25s;
 }
 .film-news-item:hover .thumbnail {
-  background-color: #f0ad4f;
+  border-color: #df8a13;
+  background-color: #df8a13;
 }
 .film-news-item:hover h3 > a {
   color: #df8a13;
@@ -323,7 +334,7 @@ section {
 .user-login__tabs a {
   padding: 14px 5px 11px !important;
 
-  color: #dddddd;
+  color: #d5d5d5;
   border: none !important;
   background-color: transparent !important;
 }
@@ -337,7 +348,7 @@ section {
   clear: both;
 }
 .site-news-item:not(:last-child) {
-  min-height: 85px;
+  min-height: 84.99999999px;
   margin-bottom: 15px;
 }
 .site-news-item:not(:last-child)::after {
@@ -345,12 +356,12 @@ section {
   right: 0;
   bottom: -5px;
 
-  width: calc(100% - 85px);
+  width: calc(100% - 84.99999999px);
   height: 1px;
 
   content: "";
 
-  background-color: #dddddd;
+  background-color: #d5d5d5;
 }
 .site-news-item:hover a {
   color: #df8a13;
@@ -363,13 +374,13 @@ section {
   float: left;
 
   width: 75px;
-  margin: 0 10px 10px 0;
+  margin: 0 9.99999999px 9.99999999px 0;
 }
 .site-news-item__image {
   width: 100%;
 }
 .site-news-item__title {
-  margin-bottom: 10px;
+  margin-bottom: 9.99999999px;
 }
 .site-news-item__link {
   display: -webkit-box;
@@ -390,7 +401,7 @@ section {
 .site-news-item__date {
   text-align: right;
 
-  color: #909090;
+  color: #6f6f6f;
 
   font-size: 0.8rem;
 }
@@ -441,7 +452,7 @@ section {
 .footer {
   padding-top: 45px;
 
-  color: #fbfbfb;
+  color: #d5d5d5;
   background-color: #232323;
 }
 .footer ul {
@@ -450,10 +461,10 @@ section {
   list-style: none;
 }
 .footer a {
-  color: #777777;
+  color: #6f6f6f;
 }
 .footer a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .footer-fifth {
@@ -462,11 +473,11 @@ section {
   text-align: center;
 }
 .footer-fifth a {
-  color: #fbfbfb;
+  color: #d5d5d5;
 }
 @media (min-width: 576px) {
   h1 {
-    margin: -10px 0 1em 0;
+    margin: -9.99999999px 0 1em 0;
 
     font-size: 3rem;
   }
@@ -479,10 +490,6 @@ section {
     font-size: 1.5rem;
   }
   .header-logo__title {
-    margin-right: -0.33em;
-
-    letter-spacing: 0.33em;
-
     font-size: 3.5rem;
   }
 }
@@ -490,10 +497,10 @@ section {
   .navbar-inverse .navbar-nav > li > a {
     border-radius: 4px;
   }
-  .navbar-left li {
+  .navbar-left > li {
     margin: 5px 5px 5px 0;
   }
-  .navbar-right li {
+  .navbar-right > li {
     margin: 5px 0 5px 5px;
   }
 }
@@ -523,8 +530,6 @@ section {
     font-size: 1.25rem;
   }
   .header-logo__title {
-    letter-spacing: 0.2em;
-
     font-size: 2.5rem;
   }
 }

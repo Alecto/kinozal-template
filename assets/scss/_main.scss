@@ -13,15 +13,15 @@
 .new-films,
 .top-week {
   &-row {
-    margin-right: -$gap / 2;
+    margin-right: -$gap-sm;
     margin-bottom: -$gap;
-    margin-left: -$gap / 2;
+    margin-left: -$gap-sm;
   }
 
   &-item {
     margin-bottom: $gap;
-    padding-right: $gap / 2;
-    padding-left: $gap / 2;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
 
     &__thumbnail {
       margin-bottom: 0;
@@ -53,7 +53,7 @@
       }
 
       h3 {
-        color: $color-light;
+        color: $color-white;
       }
     }
   }
@@ -85,7 +85,8 @@
 
     &:hover {
       .thumbnail {
-        background-color: lighten($color-accent, 15%);
+        border-color: $color-accent;
+        background-color: $color-accent;
       }
 
       h3 > a {

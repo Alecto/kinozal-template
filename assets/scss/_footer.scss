@@ -1,7 +1,7 @@
 .footer {
   padding-top: $gap * 3;
 
-  color: lighten($color-gray, 12%);
+  color: $color-gray;
   background-color: $color-dark;
 
   ul {
@@ -11,10 +11,10 @@
   }
 
   a {
-    color: darken($color-gray, 40%);
+    color: $color-gray-dark;
 
     &:hover {
-      color: lighten($color-gray, 14%);
+      color: $color-white;
     }
   }
 }
@@ -25,6 +25,6 @@
   text-align: center;
 
   a {
-    color: lighten($color-gray, 12%);
+    color: $color-gray;
   }
 }
