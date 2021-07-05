@@ -213,10 +213,6 @@ section {
 .new-films-item__thumbnail,
 .top-week-item__thumbnail {
   margin-bottom: 0;
-
-  -webkit-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  transition: background-color 0.25s;
 }
 .new-films-item__image,
 .top-week-item__image {
@@ -354,7 +350,7 @@ section {
 .site-news-item:not(:last-child)::after {
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -4px;
 
   width: calc(100% - 84.99999999px);
   height: 1px;
@@ -380,7 +376,7 @@ section {
   width: 100%;
 }
 .site-news-item__title {
-  margin-bottom: 9.99999999px;
+  margin-bottom: 0.5em;
 }
 .site-news-item__link {
   display: -webkit-box;

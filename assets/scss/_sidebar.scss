@@ -54,7 +54,7 @@ $image-size-with-padding: $image-size + $gap-md;
       &::after {
         position: absolute;
         right: 0;
-        bottom: -5px;
+        bottom: -4px;
 
         width: calc(100% - #{$image-size-with-padding});
         height: 1px;
@@ -88,7 +88,7 @@ $image-size-with-padding: $image-size + $gap-md;
     }
 
     &__title {
-      margin-bottom: $gap-md;
+      margin-bottom: 0.5em;
     }
 
     &__link {
