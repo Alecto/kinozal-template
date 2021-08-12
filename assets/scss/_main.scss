@@ -1,5 +1,8 @@
+@use "presets" as *;
+@use "mixins" as *;
+
 .main {
-  @extend %margin-bottom-lg;
+  margin-bottom: $gap-xl;
 
   .site-search {
     margin-bottom: $gap * 3;
