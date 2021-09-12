@@ -67,7 +67,7 @@
   }
 }
 
-.panel {
+.panel-info {
   border: none;
   background-color: $color-gray-light;
   box-shadow: none;
@@ -80,16 +80,14 @@
     margin-bottom: 0;
   }
 
-  &-info {
-    .panel-heading {
-      letter-spacing: 0.08em;
+  .panel-heading {
+    letter-spacing: 0.08em;
 
-      color: $color-white;
-      border: none;
-      background-color: $color-accent;
+    color: $color-white;
+    border: none;
+    background-color: $color-accent;
 
-      font-size: 1.25rem;
-    }
+    font-size: 1.25rem;
   }
 
   &-body {
