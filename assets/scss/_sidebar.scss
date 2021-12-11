@@ -21,14 +21,12 @@
   &__tabs {
     position: absolute;
     top: 0;
-    right: $gap;
-
-    margin-right: -5px;
+    right: $gap-md;
 
     border: none;
 
     a {
-      padding: 14px 5px 11px !important;
+      padding: 14px 5px 12x !important;
 
       color: $color-gray;
       border: none !important;

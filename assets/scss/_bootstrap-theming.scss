@@ -80,7 +80,7 @@
     margin-bottom: 0;
   }
 
-  .panel-heading {
+  > .panel-heading {
     letter-spacing: 0.08em;
 
     color: $color-white;
@@ -89,11 +89,11 @@
 
     font-size: 1.25rem;
   }
+}
 
-  &-body {
-    border: 1px solid $color-gray;
-    border-radius: 0 0 4px 4px;
-  }
+.panel-body {
+  border: 1px solid $color-gray;
+  border-radius: 0 0 4px 4px;
 }
 
 .btn-lg,
