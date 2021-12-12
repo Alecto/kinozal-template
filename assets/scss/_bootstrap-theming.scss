@@ -71,10 +71,7 @@
   border: none;
   background-color: $color-gray-light;
   box-shadow: none;
-
-  &:not(:last-of-type) {
-    margin-bottom: $gap * 2;
-  }
+  margin-bottom: $gap * 2;
 
   &:last-of-type {
     margin-bottom: 0;
